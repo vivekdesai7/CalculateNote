@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+  <LinearLayout
+       android:padding="16dp"
+      android:orientation="vertical"
+      android:background="@color/colorgay"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <TextView
+          android:text="Enter Amount "
+          android:layout_width="match_parent"
+          android:textSize="16sp"
+          android:layout_height="wrap_content" />
+
+      <EditText
+          android:layout_marginBottom="5dp"
+          android:inputType="numberDecimal"
+          android:id="@+id/amount"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/bg_layout"
+          android:padding="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <LinearLayout
+          android:id="@+id/header"
+          android:visibility="gone"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+
+  <LinearLayout
+     android:padding="5dp"
+      android:layout_marginTop="5dp"
+      android:weightSum="7"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+          android:text="Currency Note"
+          android:layout_weight="3"
+          android:layout_width="0dp"
+          android:textColor="@color/colorwhite"
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:text="Count"
+          android:textColor="@color/colorwhite"
+          android:layout_weight="2"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:text="Total"
+          android:textColor="@color/colorwhite"
+          android:layout_weight="2"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content" />
+
+
+  </LinearLayout>
+
+      </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ButtonsLinearLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/button"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/btnsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:textSize="16sp"
+            android:background="@null"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</RelativeLayout>
